@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "stdlib.h": "c",
+    "stdio.h": "c"
+  },
+  "C_Cpp.intelliSenseEngineFallback": "Enabled"
+}

@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1540342081 source:c:\users\sungwx\desktop\workspace\overcome-pointers\main.c
+	"stdc.h"
+	"swap-funcation-demo.c"
+	"swap-adress-demo.c"
+
+1540341322 c:\users\sungwx\desktop\workspace\overcome-pointers\stdc.h
+	<stdio.h>
+	<stdlib.h>
+
+1540341839 c:\users\sungwx\desktop\workspace\overcome-pointers\swap-funcation.c
+	"stdc.h"
+
+1540341957 c:\users\sungwx\desktop\workspace\overcome-pointers\swap-funcation-demo.c
+	"stdc.h"
+
+1540342262 c:\users\sungwx\desktop\workspace\overcome-pointers\swap-adress-demo.c
+	"stdc.h"
+
