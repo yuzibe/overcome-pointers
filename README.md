@@ -27,5 +27,17 @@
 
 ## 几个Demo  
 
-程序在codeblocks-minGW通过！  `0 error(s), 0 warning(s)`   
-Demo地址在我的GitHub上，欢迎大家访问，如果通过此节你理解了指针，希望你可以帮我点个star(☆▽☆)   
+程序在codeblocks-minGW通过！  `0 error(s), 0 warning(s)` 如果你运行失败请优先考虑是否引入正确！  
+
+- *demo-1*: [**swap_demo**](https://github.com/son9wx/overcome-pointers/blob/master/main.c)  
+> desc:在一个普通函数中的指针模型理解
+- *demo-2*: [**swap-funcation-demo**](https://github.com/son9wx/overcome-pointers/blob/master/swap-funcation-demo.c)  
+> desc:作为参数传递的指针模型内容理解
+- *demo-3*: [**swap-adress-demo**](https://github.com/son9wx/overcome-pointers/blob/master/swap-adress-demo.c)  
+> desc:作为参数传递的指针模型地址理解
+- *demo-4*: [**find-char-demo**](https://github.com/son9wx/overcome-pointers/blob/master/find-char-demo.c)  
+> desc:多级指针的理解
+- *demo-5*: [**bitree-demo**](https://github.com/son9wx/overcome-pointers/blob/master/bitree-demo.c)  
+> desc:指针综合运用，一个二叉树建立的模型，他的内容比网上的一般例程要丰富，涉及字符串指针等  
+
+Demo地址在我的GitHub上，欢迎大家访问，如果通过此节你理解了指针，希望你可以帮我点个star(☆▽☆)  
