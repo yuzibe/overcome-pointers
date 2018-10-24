@@ -1,6 +1,7 @@
 #include "stdc.h"
 #include "swap-funcation-demo.c"
 #include "swap-adress-demo.c"
+#include "find-char-demo.c"
 
 /**
  * @desc int a 和 b 交换。
@@ -27,6 +28,7 @@ int main()
     swap_demo();
     swap_main();
     swap_adress_main();
+    find_char_main();
     // 程序一闪而过在return语句打断点
     return 0;
 }
