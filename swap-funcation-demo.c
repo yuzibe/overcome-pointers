@@ -3,11 +3,11 @@
 void swap_main()
 {
   int a = 3, b = 4;
-  printf("value of a is %d,adress of a is %o\n", a, &a);
-  printf("value of b is %d,adress of b is %o\n", b, &b);
+  printf("value of a is %d,adress of a is %x\n", a, &a);
+  printf("value of b is %d,adress of b is %x\n", b, &b);
   swap_function(&a, &b);
-  printf("value of a is %d,adress of a is %o\n", a, &a);
-  printf("value of b is %d,adress of b is %o\n", b, &b);
+  printf("value of a is %d,adress of a is %x\n", a, &a);
+  printf("value of b is %d,adress of b is %x\n", b, &b);
   return;
 }
 

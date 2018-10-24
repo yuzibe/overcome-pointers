@@ -8,21 +8,21 @@
  *   实现 a 和 b 只交换，地址不交换
  * @return void [打印地址]
 */
-void swap_demo_1()
+void swap_demo()
 {
     int a = 1, b = 2;
     int *aptr = &a, *bptr = &b;
-    printf("value of a is %d,adress of a is %o\n", a, aptr);
-    printf("value of b is %d,adress of b is %o\n", b, bptr);
+    printf("value of a is %d,adress of a is %x\n", a, aptr);
+    printf("value of b is %d,adress of b is %x\n", b, bptr);
     *aptr = 2;
     *bptr = 1;
-    printf("value of a is %d,adress of a is %o\n", a, aptr);
-    printf("value of b is %d,adress of b is %o\n", b, bptr);
+    printf("value of a is %d,adress of a is %x\n", a, aptr);
+    printf("value of b is %d,adress of b is %x\n", b, bptr);
 }
 
 int main()
 {
-    swap_demo_1();
+    swap_demo();
     swap_main();
     swap_adress_main();
     return 0;
