@@ -14,10 +14,29 @@ typedef struct bitree
   int num;
   nodeptr root;
 } bitree, *bitreeptr;
-
+/**
+ * @desc 为bt树bt树封装了一棵树的root节点
+ * - malloc创建bt
+ * @param (bitree **) bt 树根
+ * @return void 
+ */
 void creat_bitree_head(bitreeptr *btp);
+/**
+ * @desc 为bt树创建node节点
+ * - 为bt树创建node节点
+ * @param (bitree) bt 树根
+ * @param (node *) np 树根或者子树根或者叶子节点
+ * @return void 
+ */
 void creat_bitree_node(bitree bt, nodeptr np, char **elem);
+/**
+ * @desc 通过根节点遍历二叉树！
+ * - 通过根节点遍历二叉树！
+ * @param (node) root 某棵树的根节点
+ * @return void [打印前序遍历的二叉树，原则上与构造字符串相同]
+ */
 void print_bitree(node root);
+// 模拟main环境
 void bitree_main();
 
 void bitree_main()
