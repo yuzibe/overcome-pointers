@@ -13,12 +13,12 @@ void swap_demo()
 {
     int a = 1, b = 2;
     int *aptr = &a, *bptr = &b;
-    printf("value of a is %d,adress of a is %x\n", a, (int)aptr);
-    printf("value of b is %d,adress of b is %x\n", b, (int)bptr);
+    printf("value of a is %d,adress of a is %p\n", a, aptr);
+    printf("value of b is %d,adress of b is %p\n", b, bptr);
     *aptr = 2;
     *bptr = 1;
-    printf("value of a is %d,adress of a is %x\n", a, (int)aptr);
-    printf("value of b is %d,adress of b is %x\n", b, (int)bptr);
+    printf("value of a is %d,adress of a is %p\n", a, aptr);
+    printf("value of b is %d,adress of b is %p\n", b, bptr);
     return;
 }
 

@@ -14,11 +14,11 @@ void swap_function(int *p1, int *p2);
 void swap_main()
 {
   int a = 3, b = 4;
-  printf("value of a is %d,adress of a is %x\n", a, (int)&a);
-  printf("value of b is %d,adress of b is %x\n", b, (int)&b);
+  printf("value of a is %d,adress of a is %p\n", a, &a);
+  printf("value of b is %d,adress of b is %p\n", b, &b);
   swap_function(&a, &b);
-  printf("value of a is %d,adress of a is %x\n", a, (int)&a);
-  printf("value of b is %d,adress of b is %x\n", b, (int)&b);
+  printf("value of a is %d,adress of a is %p\n", a, &a);
+  printf("value of b is %d,adress of b is %p\n", b, &b);
   return;
 }
 
