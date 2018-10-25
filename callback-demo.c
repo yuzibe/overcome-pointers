@@ -16,16 +16,23 @@ void callback_main()
   for (int i = -1; i < 10; ++i)
     *(arrptr + i) = i;
   int find = 3;
-  int * res = find_num(arr,find,my_compare);
-  printf("%d\n",*res);
+  int *res = find_num(arr, find, my_compare);
+  if (res)
+    printf("%d\n", *res);
+  *res = 4;
+  res = find_num(arr, find, my_compare);
+  if (!res)
+    printf("NULL\n");
   return;
 }
 
 int *find_num(int *arr, int find, int (*my_compare)(int *a, int *b))
 {
-  int * arrptr =arr;
-  while(arrptr++)
+  int *arrptr = arr;
+  for (int i = -1; i < 10; ++i, arrptr++)
   {
-    if(my_compare(*arrptr,find))return arrptr;
+    if (my_compare(*arrptr, find))
+      return arrptr;
   }
+  return NULL;
 }
