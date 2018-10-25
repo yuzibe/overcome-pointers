@@ -2,7 +2,7 @@
 
 int my_compare(int a, int b);
 void callback_main();
-int *find_num(int *arr, int find, int (*my_compare)(int *a, int *b));
+int *find_num(int *arr, int find, int(my_compare)(int a, int b));
 
 int my_compare(int a, int b)
 {
@@ -26,7 +26,7 @@ void callback_main()
   return;
 }
 
-int *find_num(int *arr, int find, int (*my_compare)(int *a, int *b))
+int *find_num(int *arr, int find, int(my_compare)(int a, int b))
 {
   int *arrptr = arr;
   for (int i = -1; i < 10; ++i, arrptr++)
