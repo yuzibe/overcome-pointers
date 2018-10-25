@@ -39,5 +39,7 @@
 > desc:多级指针的理解
 - *demo-5*: [**bitree-demo**](https://github.com/son9wx/overcome-pointers/blob/master/bitree-demo.c)  
 > desc:指针综合运用，一个二叉树建立的模型，他的内容比网上的一般例程要丰富，涉及字符串指针等  
+- *demo-6*: [**callback-demo**](https://github.com/son9wx/overcome-pointers/blob/master/callback-demo.c)  
+> desc:指针运用，C语言的回调函数！   
 
 Demo地址在我的[GitHub](https://github.com/son9wx/overcome-pointers)上，欢迎大家访问，如果通过此你理解了指针，希望你可以帮我点个star(☆▽☆)。你也可以对一些你希望解答的相关问题发起issue，共同进步！ 
