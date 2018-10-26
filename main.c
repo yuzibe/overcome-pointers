@@ -4,6 +4,7 @@
 #include "find-char-demo.c"
 #include "bitree-demo.c"
 #include "callback-demo.c"
+#include "qa.c"
 
 /**
  * @desc int a 和 b 交换。
@@ -19,7 +20,7 @@ void swap_demo()
     printf("value of a is %d,adress of a is %p\n", a, aptr);
     printf("value of b is %d,adress of b is %p\n", b, bptr);
     *aptr = 2;
-    *bptr = 1;
+    *bptr = 1; /*  */
     printf("value of a is %d,adress of a is %p\n", a, aptr);
     printf("value of b is %d,adress of b is %p\n", b, bptr);
     return;
