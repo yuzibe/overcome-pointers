@@ -4,6 +4,7 @@
 #include "find-char-demo.c"
 #include "bitree-demo.c"
 #include "callback-demo.c"
+#include "object-demo.c"
 #include "qa.c"
 
 /**
@@ -32,7 +33,8 @@ int main()
     // swap_main();
     // swap_adress_main();
     // find_char_main();
-    bitree_main();
+    // bitree_main();
+    object_main();
     // callback_main();
     // 程序一闪而过在return语句打断点
     return 0;

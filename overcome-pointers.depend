@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1540652042 source:c:\users\sungwx\desktop\workspace\overcome-pointers\main.c
+1540679981 source:c:\users\sungwx\desktop\workspace\overcome-pointers\main.c
 	"stdc.h"
 	"swap-funcation-demo.c"
 	"swap-adress-demo.c"
 	"find-char-demo.c"
 	"bitree-demo.c"
 	"callback-demo.c"
+	"object-demo.c"
 	"qa.c"
 
 1540385769 c:\users\sungwx\desktop\workspace\overcome-pointers\stdc.h
@@ -24,7 +25,7 @@
 1540563981 c:\users\sungwx\desktop\workspace\overcome-pointers\find-char-demo.c
 	"stdc.h"
 
-1540652773 c:\users\sungwx\desktop\workspace\overcome-pointers\bitree-demo.c
+1540652820 c:\users\sungwx\desktop\workspace\overcome-pointers\bitree-demo.c
 	"stdc.h"
 	"malloc.h"
 
@@ -32,5 +33,8 @@
 	"stdc.h"
 
 1540563963 c:\users\sungwx\desktop\workspace\overcome-pointers\qa.c
+	"stdc.h"
+
+1540680449 c:\users\sungwx\desktop\workspace\overcome-pointers\object-demo.c
 	"stdc.h"
 
