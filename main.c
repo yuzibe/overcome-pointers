@@ -29,13 +29,13 @@ void swap_demo()
 
 int main()
 {
-    // swap_demo();
-    // swap_main();
-    // swap_adress_main();
-    // find_char_main();
-    // bitree_main();
+    swap_demo();
+    swap_main();
+    swap_adress_main();
+    find_char_main();
+    bitree_main();
     object_main();
-    // callback_main();
+    callback_main();
     // 程序一闪而过在return语句打断点
     return 0;
 }
