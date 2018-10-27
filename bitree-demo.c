@@ -18,17 +18,17 @@ typedef struct bitree
  * @desc 为bt树bt树封装了一棵树的root节点
  * - malloc创建bt
  * @param (bitree **) bt 树根
- * @return void 
+ * @return void
  */
-void creat_bitree_head(bitreeptr *btp);
+void creat_bitree_head(bitreeptr btp);
 /**
  * @desc 为bt树创建node节点
  * - 为bt树创建node节点
  * @param (bitree) bt 树根
  * @param (node *) np 树根或者子树根或者叶子节点
- * @return void 
+ * @return void
  */
-void creat_bitree_node(bitree bt, nodeptr np, char **elem);
+void creat_bitree_node(bitree bt, nodeptr *np, char **elem);
 /**
  * @desc 通过根节点遍历二叉树！
  * - 通过根节点遍历二叉树！
@@ -42,47 +42,44 @@ void bitree_main();
 void bitree_main()
 {
   bitree bt;
-  bitreeptr btp = &bt;
   char *str = TREESTR;
-  creat_bitree_head(&btp);
-  creat_bitree_node((*btp), btp->root, &str);
-  print_bitree(*(btp->root));
+  creat_bitree_head(&bt);
+  creat_bitree_node(bt, &((&bt)->root), &str);
+  print_bitree(*((&bt)->root));
   printf("\n");
 }
 
-void creat_bitree_head(bitreeptr *btp)
+void creat_bitree_head(bitreeptr btp)
 {
-  (*btp) = (bitreeptr)malloc(sizeof(bitree));
-  if (!*btp)
-    exit(-500);
-  (*btp)->num = 1;
-  (*btp)->root = (nodeptr)malloc(sizeof(node));
-  if (!(*btp)->root)
+  // (*btp) = (bitreeptr)malloc(sizeof(bitree));
+  // if (!*btp)
+  //   exit(-500);
+  btp->num = 1;
+  btp->root = (nodeptr)malloc(sizeof(node));
+  if (!btp->root)
     exit(-500);
   return;
 }
 
-void creat_bitree_node(bitree bt, nodeptr np, char **elem)
+void creat_bitree_node(bitree bt, nodeptr *np, char **elem)
 {
   char cur = *((*elem)++);
   if (cur == '-')
   {
-    np->left = NULL;
-    np->right = NULL;
-    np->data = '-';
+    (*np) = NULL;
     return;
   }
-  np->data = cur;
-  np->left = (nodeptr)malloc(sizeof(node));
-  if (!np->left)
+  (*np)->data = cur;
+  (*np)->left = (nodeptr)malloc(sizeof(node));
+  if (!(*np)->left)
     exit(-500);
 
-  np->right = (nodeptr)malloc(sizeof(node));
-  if (!np->right)
+  (*np)->right = (nodeptr)malloc(sizeof(node));
+  if (!(*np)->right)
     exit(-500);
 
-  creat_bitree_node(bt, np->left, elem);
-  creat_bitree_node(bt, np->right, elem);
+  creat_bitree_node(bt, &((*np)->left), elem);
+  creat_bitree_node(bt, &((*np)->right), elem);
 
   return;
 }
@@ -92,6 +89,10 @@ void print_bitree(node n)
   printf("%c", n.data);
   if (n.left)
     print_bitree(*(n.left));
+  else
+    printf("-");
   if (n.right)
     print_bitree(*(n.right));
+  else
+    printf("-");
 }
