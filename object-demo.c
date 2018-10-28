@@ -5,11 +5,11 @@ typedef struct People{
   int age;
 }People,*_People;
 
-void __main__();
-void setName(_People self,char * name);
-void setOld(_People self,int old);
-char * getName(_People self);
-int getOld(_People self);
+void object_main();
+void setName(const _People self,char * name);
+void setOld(const _People self,int old);
+char * getName(const _People self);
+int getOld(const _People self);
 
 void object_main()
 {
