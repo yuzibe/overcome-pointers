@@ -1,5 +1,9 @@
 #include "stdc.h"
 
+/**
+ * @desc 不定长C语言字符串
+ * @return (void) [打印地址，不返回参数]
+ */
 void qa001();
 
 void qa001()

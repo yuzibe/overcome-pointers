@@ -5,11 +5,38 @@ typedef struct People{
   int age;
 }People,*_People;
 
+// 模拟main环境
 void object_main();
+/**
+ * @desc set方法
+ * - 实现 对 参数self结构体赋值
+ * @param (const _People) self _People的地址 不可以在函数内发生改变
+ * @param (char*) name 姓名的字符串
+ * @return (void) [打印地址，不返回参数]
+ */
 void setName(const _People self,char * name);
-void setOld(const _People self,int old);
+/**
+ * @desc set方法
+ * - 实现 对 参数self结构体赋值
+ * @param (const _People) self _People的地址 不可以在函数内发生改变
+ * @param (int) age 年龄
+ * @return (void) [打印地址，不返回参数]
+ */
+void setAge(const _People self,int age);
+/**
+ * @desc get方法
+ * - 实现 对 参数self结构体赋值
+ * @param (const _People) self _People的地址 不可以在函数内发生改变
+ * @return (char*) name 姓名的字符串
+ */
 char * getName(const _People self);
-int getOld(const _People self);
+/**
+ * @desc set方法
+ * - 实现 对 参数self结构体赋值
+ * @param (const _People) self _People的地址 不可以在函数内发生改变
+ * @return (int) age 年龄
+ */
+int getAge(const _People self);
 
 void object_main()
 {
@@ -27,7 +54,7 @@ void setName(_People self,char * name)
   return;
 }
 
-void setOld(_People self,int age)
+void setAge(_People self,int age)
 {
   self->age = age;
   return;
@@ -38,7 +65,7 @@ char * getName(_People self)
   return self->name;
 }
 
-int getOld(_People self)
+int getAge(_People self)
 {
 
   return self->age;

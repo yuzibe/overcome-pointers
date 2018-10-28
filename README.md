@@ -1,6 +1,8 @@
 # 指针：兰花指到弹指神通  
 
 > 指针：从😭到😂系列   🎈  
+
+<!-- more -->
   
 ## 地址与内存  
   
@@ -27,7 +29,7 @@
 
 ## 几个Demo  
 
-程序在codeblocks-minGW通过！  `0 error(s), 0 warning(s)` 如果你运行失败请优先考虑是否引入正确！  
+codeblocks-minGW通过！  `0 error(s), 0 warning(s)` 如果你运行失败请优先考虑是否引入正确！  
 
 - *demo-1*: [**swap-demo**](https://github.com/son9wx/overcome-pointers/blob/master/main.c)  
 > desc:在一个普通函数中的指针模型理解
